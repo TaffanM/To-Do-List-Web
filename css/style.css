@@ -74,22 +74,23 @@
     width: 1024px;
     max-width: 95%;
     height: calc(100vh - 314px);
-    background: #f2f2f2;
-    border: 1 px solid rgba(219, 219, 219, 0.8);
+    background: #f5f5f5;
+    border: 1px solid rgba(240, 239, 239, 0.8);
     border-radius: 6px;
     display: flex;
     box-shadow: 2px 2px 8px rgb(26, 26, 27);
+    justify-content: center;
 }
 
 #new-task-input {
-    display: block;
-    width: 500px;
-    height: 36px;
+    display: grid;
+    width: 400px;
+    height: 50px;
     color: black;
     border-radius: 50px;
     border-color: rgba(182, 182, 182, 0.62);
-    position: absolute;
-    margin: auto;
+    position: relative;
+    margin-top: 50px;
     padding: 5px;
     padding-left: 15px;
     box-shadow: 0px 4px rgba(182, 182, 182, 0.62);
@@ -115,6 +116,33 @@ input[type="text"] {
 #new-task-input:focus {
     border-color: rgba(182, 182, 182, 0.62); 
     outline: none;  
+}
+
+#button-task-input {
+    position: absolute;
+    margin-top: 30px;
+    display: table;
+    float: none;
+    width: 330px;
+    height: 45px;
+    border-radius: 50px;
+    padding: 5px;
+    border: none;
+    margin-left: 30px;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 12px;
+    font-style: bold;
+    transition-duration: 0.5s;
+}
+
+#button-task-input:hover {
+    opacity: 0.8;
+    
+}
+
+#button-task-input:active {
+    opacity: 0.6;
 }
 
 
